@@ -544,13 +544,13 @@ function renderChatActionButtons(iaAtivo) {
     if (iaAtivo) {
         const btn = document.createElement('button');
         btn.className = 'btn btn-secondary btn-glow';
-        btn.textContent = '🤖 Assumir Conversa';
+        btn.textContent = 'Assumir Conversa';
         btn.addEventListener('click', () => assumirConversa());
         area.appendChild(btn);
     } else {
         const btn = document.createElement('button');
         btn.className = 'btn btn-primary';
-        btn.textContent = '⚡ Devolver para IA';
+        btn.textContent = 'Devolver para IA';
         btn.addEventListener('click', () => liberarParaIA());
         area.appendChild(btn);
     }

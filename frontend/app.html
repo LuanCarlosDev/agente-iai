@@ -27,7 +27,11 @@
         <!-- ==========================================================================
              TELA DE LOGIN
              ========================================================================== -->
-        <div id="view-login" class="auth-view" style="display: none;">
+        <div id="view-login" class="auth-view" style="display: none; position: relative;">
+            <a href="index.html" class="btn btn-secondary" style="position: absolute; top: 24px; left: 24px; padding: 8px 16px; font-size: 13.5px; text-decoration: none; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Voltar para o início
+            </a>
             <div class="auth-card glass-card">
                 <div class="logo center">
                     <div class="logo-icon"></div>
@@ -45,11 +49,8 @@
                         <label for="loginSenha">Senha</label>
                         <input type="password" id="loginSenha" required placeholder="Sua senha">
                     </div>
-                    <button type="submit" class="btn btn-primary full-width">Acessar Sistema</button>
+                    <button type="submit" class="btn btn-primary full-width">Entrar</button>
                 </form>
-                <div class="auth-footer">
-                    <span>Novo por aqui? </span><a href="#cadastro">Cadastrar nova Empresa</a>
-                </div>
             </div>
         </div>
 
@@ -114,10 +115,10 @@
                     <div class="nav-section-group" id="nav-group-adm" style="display: none;">
                         <span class="nav-section-title">Administração Geral</span>
                         <a href="#dashboard-adm" class="nav-link active" data-view="panel-adm">
-                            <span class="nav-icon">🏢</span> Empresas Clientes
+                            Empresas Clientes
                         </a>
                         <a href="#auditoria-adm" class="nav-link" data-view="panel-adm-usuarios">
-                            <span class="nav-icon">👤</span> Auditoria Usuários
+                            Auditoria Usuários
                         </a>
                     </div>
                     
@@ -125,10 +126,10 @@
                     <div class="nav-section-group" id="nav-group-gestor" style="display: none;">
                         <span class="nav-section-title">Configurações Empresa</span>
                         <a href="#dashboard-gestor" class="nav-link" data-view="panel-gestor">
-                            <span class="nav-icon">📊</span> Métricas & Equipe
+                            Métricas & Equipe
                         </a>
                         <a href="#config-ia-gestor" class="nav-link" data-view="panel-gestor-ia">
-                            <span class="nav-icon">🤖</span> Configurações de IA
+                            Configurações de IA
                         </a>
                     </div>
 
@@ -136,12 +137,12 @@
                     <div class="nav-section-group" id="nav-group-secretaria" style="display: none;">
                         <span class="nav-section-title">Operação de Chat</span>
                         <a href="#chat-secretaria" class="nav-link" data-view="panel-chat">
-                            <span class="nav-icon">💬</span> Live Chat WhatsApp
+                            Live Chat WhatsApp
                         </a>
                     </div>
                 </nav>
                 <div class="sidebar-footer">
-                    <button class="btn-logout" id="btnLogout">🚪 Sair do Sistema</button>
+                    <button class="btn-logout" id="btnLogout">Sair do Sistema</button>
                 </div>
             </aside>
 
@@ -368,7 +369,7 @@
                         </div>
                         <div class="chat-header-actions">
                             <!-- Botão para simular leads no frontend -->
-                            <button class="btn btn-secondary btn-glow" id="btnSimulateLead">🤖 Simular Novo Lead</button>
+                            <button class="btn btn-secondary btn-glow" id="btnSimulateLead">Simular Novo Lead</button>
                         </div>
                     </div>
 
@@ -387,7 +388,7 @@
                         <div class="chat-workspace">
                             <!-- Estado Vazio (Sem chat selecionado) -->
                             <div class="chat-empty-state" id="chatEmptyState">
-                                <div class="chat-empty-icon">💬</div>
+                                <div class="chat-empty-icon"></div>
                                 <h3>Nenhuma conversa selecionada</h3>
                                 <p>Selecione um cliente ao lado para ver o histórico de conversas e assumir o atendimento se necessário.</p>
                             </div>
