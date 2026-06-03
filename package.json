@@ -2,12 +2,10 @@
   "name": "iai-solucoes-app",
   "version": "1.0.0",
   "description": "Sistema de Agentes Autônomos e Vendas via WhatsApp - IAI Soluções",
-  "main": "frontend/index.html",
   "scripts": {
-    "dev": "vite frontend --port 3000 --host"
-  },
-  "devDependencies": {
-    "vite": "^5.0.0"
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start"
   },
   "keywords": [
     "iai-solucoes",
