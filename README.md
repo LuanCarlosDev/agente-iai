@@ -6,27 +6,27 @@ O sistema permite centralizar o fluxo de atendimento em múltiplos atendentes hu
 
 ---
 
-## 🚀 Funcionalidades Principais por Perfil
+##  Funcionalidades Principais por Perfil
 
-### 🏢 1. Administrador Geral (ADM Global)
+### 1. Administrador Geral (ADM Global)
 *   **Gestão de Empresas Parceiras**: Cadastra e audita contas comerciais inquilinas na plataforma.
 *   **Auditoria Global**: Visualização centralizada de todas as contas e permissões do sistema.
 *   **Criação de Acessos**: Capacidade de criar e associar usuários (Gestores e Secretárias) para qualquer empresa inquilina comercializada.
 
-### 📊 2. Gestor de Empresa
+### 2. Gestor de Empresa
 *   **Métricas de Desempenho**: Visualiza volumetria de contatos ativos no sistema e o status em tempo real do robô de IA.
 *   **Gestão de Equipe**: Cadastro de novos atendentes (Secretárias) com acessos exclusivos para a sua empresa inquilina.
 *   **Diretrizes de IA**: Configura e calibra o prompt de sistema e tom de voz que o robô inteligente usará para falar com seus clientes.
 
-### 💬 3. Atendente Comercial (Secretária)
+### 3. Atendente Comercial (Secretária)
 *   **Live Chat WhatsApp**: Painel completo para leitura e envio de mensagens em tempo real para os leads captados.
-*   **Interferência Humana Inteligente**: Botão **"🤖 Assumir Conversa"** que desativa instantaneamente a IA para aquele contato, permitindo o atendimento manual direto.
-*   **Devolução para IA**: Botão **"⚡ Devolver para IA"** que reativa as respostas automáticas da inteligência artificial para o lead.
+*   **Interferência Humana Inteligente**: Botão **" Assumir Conversa"** que desativa instantaneamente a IA para aquele contato, permitindo o atendimento manual direto.
+*   **Devolução para IA**: Botão **" Devolver para IA"** que reativa as respostas automáticas da inteligência artificial para o lead.
 *   **Simulador de Leads (Virtual Client)**: Botão de testes integrado que cria leads virtuais e simula perguntas dinâmicas no WhatsApp para demonstrar a resposta da IA na hora.
 
 ---
 
-## 🛠️ Stack Tecnológica
+## Stack Tecnológica
 
 *   **Frontend**: HTML5 Semântico, Vanilla CSS3 (Glassmorphism e Micro-animações) e JavaScript moderno ES6.
 *   **Servidor Frontend**: Vite (Porta 3000)
@@ -36,7 +36,7 @@ O sistema permite centralizar o fluxo de atendimento em múltiplos atendentes hu
 
 ---
 
-## 📁 Estrutura de Pastas
+## Estrutura de Pastas
 
 ```text
 ├── backend/
@@ -65,7 +65,7 @@ O sistema permite centralizar o fluxo de atendimento em múltiplos atendentes hu
 
 ---
 
-## ⚙️ Instruções de Configuração e Instalação
+## Instruções de Configuração e Instalação
 
 ### Pré-requisitos
 *   [Node.js](https://nodejs.org/) instalado.
@@ -74,7 +74,7 @@ O sistema permite centralizar o fluxo de atendimento em múltiplos atendentes hu
 
 ---
 
-### 🌐 1. Configurando o Frontend
+### 1. Configurando o Frontend
 
 1. Na raiz do projeto, instale as dependências de desenvolvimento do Node:
    ```bash
@@ -90,7 +90,7 @@ O sistema permite centralizar o fluxo de atendimento em múltiplos atendentes hu
 
 ---
 
-### 🐍 2. Configurando o Backend
+### 2. Configurando o Backend
 
 1. Navegue até a pasta do backend:
    ```bash
@@ -114,17 +114,8 @@ O sistema permite centralizar o fluxo de atendimento em múltiplos atendentes hu
 6. O backend estará ativo em **[http://localhost:8000](http://localhost:8000)**.
    * O Swagger para testes interativos de endpoints estará em **[http://localhost:8000/docs](http://localhost:8000/docs)**.
 
----
 
-## 🔑 Credencial Administrador Padrão
-
-Ao rodar o backend pela primeira vez, o banco de dados SQLite será gerado e um administrador de testes padrão será criado (semeado) de forma automática:
-*   **E-mail**: `iai@gmail.com`
-*   **Senha**: `iai123456`
-
----
-
-## 🔒 Segurança & Boas Práticas (SecOps)
+## Segurança & Boas Práticas (SecOps)
 
 *   **Sem Credenciais Hardcoded**: As senhas são devidamente tratadas com hashing criptográfico `bcrypt` antes de serem persistidas no banco.
 *   **Isolamento Multi-inquilino**: Toda rota privada valida o `empresa_id` do token JWT do usuário ativo, impedindo que uma empresa acesse ou modifique dados de outra.
